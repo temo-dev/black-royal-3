@@ -1,13 +1,12 @@
 import { useState } from "react";
-import { Container, Group, Burger } from "@mantine/core";
+import { Container, Group, Burger, Avatar, Title, Box } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
-// import { MantineLogo } from '@mantinex/mantine-logo';
+import logo from "../../public/images/logo.png";
 import classes from "./index.module.css";
+import Image from "next/image";
 
 const links = [
   { link: "/about", label: "Features" },
-  { link: "/pricing", label: "Pricing" },
-  { link: "/learn", label: "Learn" },
   { link: "/community", label: "Community" },
 ];
 
@@ -33,7 +32,12 @@ const Header = () => {
   return (
     <header className={classes.header}>
       <Container size="md" className={classes.inner}>
-        {/* <MantineLogo size={28} /> */}
+        <Group>
+          <Avatar src={"/images/logo.png"} alt="logo-mom-care" />
+          <Title order={3} lineClamp={1}>
+            Doctor Momcare
+          </Title>
+        </Group>
         <Group gap={5} visibleFrom="xs">
           {items}
         </Group>

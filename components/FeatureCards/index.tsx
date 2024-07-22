@@ -31,6 +31,12 @@ const mockdata = [
       "They’re popular, but they’re rare. Trainers who show them off recklessly may be targeted by thieves",
     icon: IconCookie,
   },
+  {
+    title: "No third parties",
+    description:
+      "They’re popular, but they’re rare. Trainers who show them off recklessly may be targeted by thieves",
+    icon: IconCookie,
+  },
 ];
 
 export function FeaturesCards() {
@@ -46,7 +52,7 @@ export function FeaturesCards() {
       <feature.icon
         style={{ width: rem(50), height: rem(50) }}
         stroke={2}
-        color={theme.colors.blue[6]}
+        color={theme.colors.red[9]}
       />
       <Text fz="lg" fw={500} className={classes.cardTitle} mt="md">
         {feature.title}
@@ -60,7 +66,7 @@ export function FeaturesCards() {
   return (
     <Container size="lg" py="xl">
       <Group justify="center">
-        <Badge variant="filled" size="lg">
+        <Badge variant="filled" size="lg" color="rgba(112, 49, 20, 1)">
           Best company ever
         </Badge>
       </Group>
@@ -74,7 +80,7 @@ export function FeaturesCards() {
         This happens when hunger drives it to try biting a Steel-type Pokémon.
       </Text>
 
-      <SimpleGrid cols={{ base: 1, md: 3 }} spacing="xl" mt={50}>
+      <SimpleGrid cols={{ base: 1, md: 4 }} spacing="xl" mt={50}>
         {features}
       </SimpleGrid>
     </Container>

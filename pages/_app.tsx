@@ -2,12 +2,12 @@ import "@mantine/core/styles.css";
 import "@mantine/carousel/styles.css";
 import Head from "next/head";
 import { MantineProvider } from "@mantine/core";
-import { theme } from "../theme";
+import { resolver, theme } from "../theme";
 import Layout from "../components/Layout";
 
 export default function App({ Component, pageProps }: any) {
   return (
-    <MantineProvider theme={theme}>
+    <MantineProvider theme={theme} cssVariablesResolver={resolver}>
       <Head>
         <title>Doctor Momcare – chăm sóc mẹ và bé sau sinh tại nhà</title>
         <meta

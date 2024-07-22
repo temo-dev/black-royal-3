@@ -35,7 +35,7 @@
 }
 
 .highlight {
-  color: var(--mantine-color-primary-4);
+  color: var(--mantine-app-primary-color);
 }
 
 .description {
@@ -63,6 +63,10 @@
 .control {
   height: rem(42px);
   font-size: var(--mantine-font-size-md);
+  color: var(--mantine-app-primary-color);
+  &:hover {
+    color: #000;
+  }
 
   &:not(:first-of-type) {
     margin-left: var(--mantine-spacing-md);
@@ -77,7 +81,7 @@
 }
 
 .secondaryControl {
-  color: var(--mantine-color-white);
+  color: var(--mantine-app-primary-color);
   background-color: rgba(255, 255, 255, 0.4);
 
   @mixin hover {

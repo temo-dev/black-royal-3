@@ -61,7 +61,11 @@ export function GetInTouch() {
               />
 
               <Group justify="flex-end" mt="md">
-                <Button type="submit" className={classes.control}>
+                <Button
+                  type="submit"
+                  className={classes.control}
+                  color="#6c2f13"
+                >
                   Send message
                 </Button>
               </Group>

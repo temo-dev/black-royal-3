@@ -1,4 +1,12 @@
-import { Text, Container, ActionIcon, Group, rem } from "@mantine/core";
+import {
+  Text,
+  Container,
+  ActionIcon,
+  Group,
+  rem,
+  Avatar,
+  Title,
+} from "@mantine/core";
 import {
   IconBrandTwitter,
   IconBrandYoutube,
@@ -63,7 +71,10 @@ const Footer = () => {
     <footer className={classes.footer}>
       <Container className={classes.inner}>
         <div className={classes.logo}>
-          {/* <MantineLogo size={30} /> */}
+          <Avatar src={"/images/logo.png"} alt="logo-mom-care" size={"5rem"} />
+          <Title order={5} lineClamp={1}>
+            Doctor Momcare
+          </Title>
           <Text size="xs" c="dimmed" className={classes.description}>
             Build fully functional accessible web applications faster than ever
           </Text>

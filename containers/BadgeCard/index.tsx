@@ -12,8 +12,7 @@ import {
 import classes from "./index.module.css";
 
 const mockdata = {
-  image:
-    "https://images.unsplash.com/photo-1437719417032-8595fd9e9dc6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80",
+  image: "/images/spa01.webp",
   title: "Verudela Beach",
   country: "Croatia",
   description:
@@ -30,7 +29,12 @@ const mockdata = {
 export function BadgeCard() {
   const { image, title, description, country, badges } = mockdata;
   const features = badges.map((badge) => (
-    <Badge variant="light" key={badge.label} leftSection={badge.emoji}>
+    <Badge
+      variant="light"
+      key={badge.label}
+      leftSection={badge.emoji}
+      color="#6c2f13"
+    >
       {badge.label}
     </Badge>
   ));
@@ -46,7 +50,7 @@ export function BadgeCard() {
           <Text fz="lg" fw={500}>
             {title}
           </Text>
-          <Badge size="sm" variant="light">
+          <Badge size="sm" variant="light" color="#6c2f13">
             {country}
           </Badge>
         </Group>
@@ -74,7 +78,7 @@ export function BadgeCard() {
       </Card.Section>
 
       <Group mt="xs">
-        <Button radius="md" style={{ flex: 1 }}>
+        <Button radius="md" style={{ flex: 1 }} color="#6c2f13">
           Show details
         </Button>
         <ActionIcon variant="default" radius="md" size={36}>
