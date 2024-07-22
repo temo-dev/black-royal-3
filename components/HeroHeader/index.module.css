@@ -5,7 +5,7 @@
   background-image: url(../../public/images/spa01.webp);
   background-size: cover;
   background-position: center;
-  width: 100vw;
+  width: 100%;
   @media (max-width: $mantine-breakpoint-xs) {
     padding-top: rem(80px);
     padding-bottom: rem(50px);
